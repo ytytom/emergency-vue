@@ -31,18 +31,18 @@ export default {
       }
       e.preventDefault();
       
-        this.$axios({
-          methods: 'post',
-          url:'http://127.0.0.1:5000/login',
-          data:{
-            username:this.username,
-            password:this.password,
-          }
-        }).then((response) => {
-          console.log(response)
-        }).catch((error)=>{
-          console.log(error)
-        })
+        // this.$axios({
+        //   methods: 'post',
+        //   url:'http://127.0.0.1:5000/login',
+        //   data:{
+        //     username:this.username,
+        //     password:this.password,
+        //   }
+        // }).then((response) => {
+        //   console.log(response)
+        // }).catch((error)=>{
+        //   console.log(error)
+        // })
       
     }
   }

@@ -1,6 +1,7 @@
 <template>
       <div>
       <p v-if="endTime">{{time}}</p>
+      <!-- <P v-if="endTime">{{message}}</P> -->
       </div>
 </template>
 <script>
@@ -27,7 +28,7 @@
        },
        methods : {
            timeDown () {
-               const endTime = new Date(this.endTime)
+               const endTime = new Date(this.endTime);
                const nowTime = new Date();
                let leftTime = parseInt((endTime.getTime()-nowTime.getTime())/1000)
                let d = parseInt(leftTime/(24*60*60))
@@ -47,7 +48,11 @@
                }else{
                    return `0${time}`
                }
-           }
-       }
+           },
+       },
    }
 </script>
+
+<style>
+
+</style>
